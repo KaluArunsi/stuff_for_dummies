@@ -1,0 +1,31 @@
+Purposely didn't include any version numbers. This is a 'for_dummies' project anyway.
+However certain projects do require version-dependent variants of key packages.
+
+Also if you are just seeing this as a first-time user,
+consider using a virtual environment
+to avoid conflicts with existing packages on your system.
+
+To create and activate a virtual environment, you can use the following commands:
+Firstly navigate to your project directory in the terminal, then run:
+>>> python -m venv --help #to be sure you have venv module available
+>>> python -m venv your_venv_name  #create a virtual environment named whatever you like
+>>> source your_venv_name/bin/activate  #on Unix or MacOS
+>>> your_venv_name\Scripts\activate  #on Windows
+
+After activating the virtual environment, you can install the packages listed in this file using:
+>>> pip install -r requirements.txt
+
+I personally like to create a folder where I navigate into,
+and then set up the virtual environment there. Personal preference tbvh.
+
+If you wish to deactivate the virtual environment, simply run:
+>>> deactivate
+
+If you wish to delete it, just delete the folder you created for it.
+However if it's the venv you wish to delete then run:
+>>> rm -rf your_venv_name  #on Unix or MacOS
+>>> rmdir /s your_venv_name  #on Windows
+
+Make sure to replace 'your_venv_name' with the actual name of
+your virtual environment folder. This will help keep your project dependencies isolated.
+and avoid conflicts with deleting virtual environments that might be in use elsewhere.
